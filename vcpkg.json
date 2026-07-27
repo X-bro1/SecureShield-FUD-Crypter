@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "secureshield",
+  "version-semver": "1.0.0",
+  "description": "Military-grade encryption library with post-quantum support (NIST FIPS 203/204)",
+  "homepage": "https://github.com/secure-shield/SecureShield",
+  "license": "MIT",
+  "supports": "windows | linux | macos",
+  "dependencies": [
+    {
+      "name": "openssl",
+      "version>=": "3.0.0"
+    },
+    {
+      "name": "libsodium",
+      "version>=": "1.0.18"
+    },
+    {
+      "name": "liboqs"
+    },
+    {
+      "name": "zstd",
+      "version>=": "1.5.0"
+    },
+    "blake3",
+    "gtest"
+  ],
+  "features": {
+    "fuzzing": {
+      "description": "Build fuzz targets (libFuzzer/AFL)",
+      "dependencies": [
+        "llvm-libuzzer"
+      ]
+    }
+  }
+}
