@@ -33,7 +33,7 @@ Military-grade encryption library for C++20 with post-quantum cryptographic supp
 
 ```bash
 # Clone the repository
-git clone https://github.com/X-bro1/SecureShield-FUD-Crypter-.git
+git clone https://github.com/X-bro1/SecureShield-FUD-Crypter.git
 cd SecureShield
 
 # Install dependencies
